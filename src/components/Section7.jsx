@@ -1,5 +1,5 @@
 import React from 'react'
-import './Section2'
+import './Section2.css'
 
 const Section7 = () => {
     return (
@@ -10,7 +10,7 @@ const Section7 = () => {
                 <div className='textSection'>
                     <h1 className='text-end'>Life happens. Be covered.</h1>
                     <div className='text-description'>
-                        <p className='lh-sm text-end ps-5' style={{ fontSize: "27px", color: "#490181" }}>Get quick, reliable protection for health, phones, and more - no paperwork needed.</p>
+                        <p className='section-highlight-text lh-sm text-end ps-5'>Get quick, reliable protection for health, phones, and more - no paperwork needed.</p>
                     </div>
                     <button className='fs-5'>Interest paid daily. Withdraw anytime.</button>
                 </div>

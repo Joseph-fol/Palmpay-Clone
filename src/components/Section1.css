@@ -1,7 +1,7 @@
 .section1 {
     padding-top: 30px;
-    /* padding-left: 30px; */
-    /* padding-right: 30px; */
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 30px;
     text-align: center;
 }
@@ -22,13 +22,15 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-items: center;
 }
 
 .section1-text{
     color: white;
     padding: 20px;
     margin-bottom: 40px;
-    width: 80%;
+    width: 90%;
+    max-width: 620px;
     border-radius: 25px;
     border-bottom: 8px solid #ffd74c;
     background-color: #490181;
@@ -45,5 +47,74 @@
 }
 
 .section1-image img{
-    width: 470px;
+    width: min(100%, 450px);
+}
+
+@media (max-width: 1199px){
+    .section-div{
+        gap: 10px;
+        padding: 24px 0;
+    }
+    .section1 h1{
+        font-size: 42px;
+    }
+
+    .section1 p{
+        font-size: 24px;
+    }
+    .section1-text{
+        width: 100%;
+
+    }
+
+    .section1-text h3{
+        font-size: 22px;
+
+    }
+}
+
+@media (max-width: 991px){
+    .section-div{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .section1 h1{
+        font-size: 36px;
+    }
+
+    .section1 p{
+        font-size: 20px;
+    }
+
+    .section1-text{
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 575px){
+    .section1{
+        margin-top: 18px;
+    }
+
+    .section1 h1{
+        font-size: 30px;
+    }
+
+    .section1 p{
+        font-size: 18px;
+    }
+
+    .section1-text{
+        border-radius: 18px;
+    }
+
+    .section1-text h3{
+        font-size: 20px;
+    }
+
+    .section1-text p{
+        font-size: 16px;
+    }
 }

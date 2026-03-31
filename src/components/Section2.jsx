@@ -14,6 +14,7 @@ const Section2 = () => {
                     </div>
                     <button className=''>99.95% success rate within 10 seconds! </button>
                 </div>
+                
                 <img className='imageSection' src="https://static.chuanyinet.com/gaiaxTemplete/friendde28b7a3-ba24-40.jpg?w=1920&q=100" alt="" />
             </section>
         </>

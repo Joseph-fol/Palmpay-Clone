@@ -7,6 +7,7 @@ const Section1 = () => {
             <section className='section1'>
                 <h1>Built For People Going Places</h1>
                 <p>Earn more, save smarter, and level up your life </p>
+                
                 <div className='section-div'>
                     <div className='mt-5'>
                         <div className='section1-text'>

@@ -1,25 +1,30 @@
 .header {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     padding: 20px 80px;
     background-color: #8b00fa;
-    justify-content: ce;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 .textDiv {
-    padding-top: 40px;
-    padding-right: 100px;
+    padding-right: 60px;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 720px;
 }
 
 .textDiv h1 {
     font-weight: bold;
     font-size: 65px;
-    padding-top: 60px;
+    padding-top: 40px;
     color: white;
     text-shadow: -5px 5px 1px #3e016d;
+    line-height: 1.06;
 }
 
-.textDiv-btn img{
+.textDiv-btn img {
     width: 150px;
     cursor: pointer;
 }
@@ -31,7 +36,7 @@
 }
 
 .headerImage img {
-    width: 400px;
+    width: min(100%, 420px);
 }
 
 .template {
@@ -43,4 +48,88 @@
 
 .template img {
     width: 320px;
+}
+
+@media (max-width: 1199px) {
+    .header {
+        padding: 20px 40px;
+        gap: 30px;
+    }
+
+    .textDiv {
+        padding-right: 20px;
+        max-width: 100%;
+    }
+
+    .textDiv h1 {
+        font-size: 52px;
+    }
+
+    .textDiv p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        align-items: center;
+    }
+
+    .textDiv {
+        padding-top: 10px;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .textDiv h1 {
+        font-size: 44px;
+        padding-top: 10px;
+    }
+
+    .textDiv p {
+        font-size: 20px;
+    }
+
+    .textDiv-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .template {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .template img {
+        width: min(44%, 220px);
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        align-items: center;
+    }
+
+    .textDiv h1 {
+        font-size: 34px;
+    }
+
+    .textDiv p {
+        font-size: 18px;
+    }
+
+    .textDiv-btn img {
+        width: 132px;
+    }
+
+    .headerImage img {
+        width: min(100%, 340px);
+    }
+
+    .template img {
+        width: min(48%, 150px);
+    }
 }

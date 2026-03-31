@@ -6,11 +6,11 @@
 
 .nav{
     display: flex;
-    padding: 18px 80px;
+    padding: 16px 48px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 120px;
+    gap: 30px;
     /* position: fixed;
     left: 0;
     right: 0; */
@@ -26,16 +26,15 @@
 }
 
 .nav-links{
-    display: flex !important;
-    justify-content: flex-start !important;
+    justify-content: flex-start;
     margin: 0 !important;
-    flex-shrink: 0;
+    flex-grow: 1;
 }
 
 .navbar-nav{
     justify-content: flex-start;
     align-items: center;
-    gap: 50px;
+    gap: 24px;
     margin: 0 !important;
 }
 
@@ -57,7 +56,7 @@
 
 .navbar-buttons{
     display: flex;
-    gap: 30px;
+    gap: 12px;
     align-items: center;
 }
 
@@ -80,5 +79,191 @@
     padding: 10px 15px;
     transition: all 0.3s ease;
     border-radius: 10px;
+}
 
+.country-picker{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+
+.flag-ng{
+    position: absolute;
+    left: 12px;
+    width: 25px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #d7dae6;
+    background: linear-gradient(to right, #128a44 0 33.33%, #ffffff 33.33% 66.66%, #128a44 66.66% 100%);
+    /* pointer-events: none; */
+}
+
+.nav-mobile-actions{
+    display: none;
+}
+
+@media (min-width: 992px){
+    .container-fluid{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 44px !important;
+    }
+
+    .navbar-nav{
+        gap: 52px;
+        margin: 0 !important;
+    }
+
+    .navbar-nav.me-auto{
+        margin-right: 0 !important;
+    }
+
+    .nav-item a{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .navbar-buttons{
+        margin-left: 36px;
+    }
+
+    .countries{
+        min-width: 150px;
+        border: 0;
+        background-color: #f1f2f7;
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .nav{
+        padding: 16px 40px;
+    }
+
+    .navbar-nav{
+        gap: 28px;
+    }
+
+    .nav-item a{
+        font-size: 16px;
+    }
+
+    .navbar-buttons{
+        gap: 10px;
+        margin-left: 16px;
+    }
+
+    .login{
+        width: 96px;
+    }
+
+    .countries{
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 991px){
+    .nav{
+        padding: 14px 20px;
+        gap: 16px;
+    }
+
+    .container-fluid{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .nav-mobile-actions{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .countries-mobile{
+        width: auto;
+        min-width: 132px;
+        max-width: none;
+        border: 0;
+        border-radius: 16px;
+        background-color: #f1f2f7;
+        padding: 8px 12px 8px 40px;
+        font-size: 18px;
+        color: #202046;
+    }
+
+    .country-picker-mobile .flag-ng{
+        left: 14px;
+    }
+
+    .navbar-toggler{
+        padding: 2px 4px;
+    }
+
+    .navbar-toggler-icon{
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .nav-links{
+        width: 100%;
+        margin-top: 14px !important;
+        border-top: 1px solid #ececff;
+        padding-top: 14px;
+    }
+
+    .navbar-nav{
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 14px !important;
+    }
+
+    .navbar-buttons{
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-bottom: 8px;
+    }
+
+    .login{
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .countries-desktop{
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 575px){
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+    .login,
+    .countries-desktop{
+        max-width: 100%;
+    }
+
+    .countries-mobile{
+        min-width: 120px;
+        font-size: 17px;
+    }
 }

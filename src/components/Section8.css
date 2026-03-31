@@ -1,13 +1,52 @@
-.body {
+.section8-body {
     background-color: #f0f0ff;
+    padding: 60px 20px;
 }
 
-.textSection h1{
+.section8-textSection h1{
     text-align: center;
+    color: #490181;
+    font-size: 44px;
+    font-weight: bold;
 }
 
-.text-description{
+.section8-description{
     display: flex;
     gap: 55px;
     justify-content: center;
+    margin-top: 28px;
+    color: #4918a6;
+}
+
+.section8-cards{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 991px){
+    .section8-body {
+        padding: 44px 20px;
+    }
+
+    .section8-textSection h1{
+        font-size: 34px;
+    }
+
+    .section8-description{
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px){
+    .section8-body {
+        padding: 32px 16px;
+    }
+
+    .section8-textSection h1{
+        font-size: 28px;
+    }
 }
