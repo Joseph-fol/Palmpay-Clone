@@ -1,0 +1,13 @@
+.body {
+    background-color: #f0f0ff;
+}
+
+.textSection h1{
+    text-align: center;
+}
+
+.text-description{
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+}

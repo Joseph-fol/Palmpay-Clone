@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    gap: 50px;
+    padding: 20px 80px;
+    background-color: #8b00fa;
+    justify-content: ce;
+}
+
+.textDiv {
+    padding-top: 40px;
+    padding-right: 100px;
+}
+
+.textDiv h1 {
+    font-weight: bold;
+    font-size: 65px;
+    padding-top: 60px;
+    color: white;
+    text-shadow: -5px 5px 1px #3e016d;
+}
+
+.textDiv-btn img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.textDiv p {
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.headerImage img {
+    width: 400px;
+}
+
+.template {
+    display: flex;
+    justify-content: center;
+    background-color: #6f06c0;
+    padding: 20px;
+}
+
+.template img {
+    width: 320px;
+}
